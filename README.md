@@ -1,2 +1,2 @@
-# T2DM-Economic-Burden
-T2DM-Economic-Burden
+# NCD-Economic-Burden
+NCD-Economic-Burden
