@@ -1,0 +1,159 @@
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 val Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 val Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 lower Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 upper -14.091220498146056 (1.126e-01) 1.035534191443744 (2.519e-01) 0.2511167001936909
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 val Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 lower Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 upper -14.091220498146056 (1.126e-01) 1.035534191443744 (2.519e-01) 0.2511167001936909
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.05 0.02 val Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0 val Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 val 0.5090768652592921 (5.298e-02) -0.062071384269555184 (4.067e-02) 0.020576921560694572
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.03 val Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.23 0.02 val -18.975249264089545 (7.406e-06) 1.6534971049997755 (1.704e-04) 0.43793653144563005
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0 lower Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 lower 0.6473810783914354 (4.917e-02) -0.07982096348403576 (3.746e-02) 0.021256379628565303
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.03 lower Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.23 0.02 lower -13.74796271145147 (3.966e-02) 0.989086938894091 (1.666e-01) 0.10347851059007396
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0 0 upper Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0 0.02 upper Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.05 0.02 upper Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0 upper -8.891859018157287 (3.096e-01) 0.5058601333557503 (5.726e-01) 0.0860475401934726
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 upper -14.008460888707482 (5.349e-134) 1.0262811115700101 (1.304e-97) 0.8809324536353076
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.03 upper -7.804717059983988 (4.279e-01) 0.34683102639495295 (7.347e-01) 0.03194930659835027
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.23 0.02 upper -14.347126483537972 (3.178e-07) 1.1333154244594594 (1.219e-04) 0.2623589662728726
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0.11 0.02 val Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0.11 0.02 lower Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0 0 upper Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0 0.02 upper Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0.11 0.02 upper -7.053033814071764 (4.890e-01) 0.26715125531560985 (8.023e-01) 0.01757224926731693
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.05 0.02 val Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0 val Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 val 0.5090768652592921 (5.298e-02) -0.062071384269555184 (4.067e-02) 0.020576921560694572
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.03 val Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.23 0.02 val -18.975249264089545 (7.406e-06) 1.6534971049997755 (1.704e-04) 0.43793653144563005
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0 lower Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 lower 0.6473810783914354 (4.917e-02) -0.07982096348403576 (3.746e-02) 0.021256379628565303
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.03 lower Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.23 0.02 lower -13.74796271145147 (3.966e-02) 0.989086938894091 (1.666e-01) 0.10347851059007396
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0 0 upper Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0 0.02 upper Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.05 0.02 upper Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0 upper -8.891859018157287 (3.096e-01) 0.5058601333557503 (5.726e-01) 0.0860475401934726
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 upper -14.008460888707482 (5.349e-134) 1.0262811115700101 (1.304e-97) 0.8809324536353076
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.03 upper -7.804717059983988 (4.279e-01) 0.34683102639495295 (7.347e-01) 0.03194930659835027
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.23 0.02 upper -14.347126483537972 (3.178e-07) 1.1333154244594594 (1.219e-04) 0.2623589662728726
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0.11 0.02 val Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0.11 0.02 lower Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0 0 upper Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0 0.02 upper Insufficient parameters
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0.11 0.02 upper -7.053033814071764 (4.890e-01) 0.26715125531560985 (8.023e-01) 0.01757224926731693
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0 0 val -7.371872101285365 (2.655e-27) 0.5589647083075799 (4.048e-15) 0.35326308909830073
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0 0.02 val -7.4347919725120555 (2.571e-28) 0.5628439365311835 (9.974e-16) 0.36574987641867895
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.05 0.02 val -7.383458034050116 (2.866e-25) 0.536914745811537 (5.104e-13) 0.3101182160694481
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0 val -6.173747125112047 (3.975e-09) 0.356775408195098 (2.242e-03) 0.06431339782492551
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 val -6.363735463119131 (2.409e-11) 0.3791243392730387 (2.970e-04) 0.08894994705503945
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.03 val -6.43684411455411 (4.192e-12) 0.38711804733573063 (1.419e-04) 0.0979004610710662
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.23 0.02 val -4.967921819398171 (2.421e-03) 0.13081907023907421 (4.894e-01) 0.004164228470314946
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0 0 lower -7.263035133300383 (4.322e-32) 0.558220079184999 (2.758e-18) 0.4157376044291424
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0 0.02 lower -7.302995918345545 (1.984e-32) 0.5591310568435379 (2.065e-18) 0.41809295719999195
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.05 0.02 lower -6.790662539268668 (9.738e-24) 0.47989510186582307 (1.964e-11) 0.2724197166033986
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0 lower -6.386908663143236 (1.592e-17) 0.4094659357401983 (4.144e-07) 0.16671701164872665
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 lower -6.456964433027774 (2.629e-18) 0.4151272725802301 (1.792e-07) 0.1762642835526793
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.03 lower -6.4968130219453135 (1.046e-18) 0.4183992316028348 (1.151e-07) 0.18126625083360426
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.23 0.02 lower -6.47136344354123 (5.193e-10) 0.3616625603385373 (1.921e-03) 0.07614872669830763
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0 0 upper -8.121891603299611 (3.064e-29) 0.634583231395284 (2.410e-17) 0.3999755262837026
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0 0.02 upper -8.136880116587976 (1.374e-29) 0.6329348557880154 (1.803e-17) 0.4024141426339146
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.05 0.02 upper -7.7897209418849656 (1.558e-18) 0.5641297927755271 (2.357e-09) 0.22410893181459213
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0 upper -7.495041145031123 (3.500e-12) 0.4924907084145919 (2.712e-05) 0.12186514469977439
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.02 upper -7.507654352286472 (3.184e-13) 0.49366354514015437 (9.727e-06) 0.1344395871055385
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.11 0.03 upper -7.52422955373128 (9.829e-14) 0.49524566989689284 (5.765e-06) 0.14080590104162982
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+1 0.23 0.02 upper -7.996015009610408 (2.493e-06) 0.48370398307438345 (1.100e-02) 0.06894491698145289
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0 0 val -7.4035307008130165 (7.328e-28) 0.5634516151431694 (1.476e-15) 0.3622793031564119
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0 0.02 val -7.461986237760739 (8.328e-29) 0.5667521426837773 (4.070e-16) 0.3736157224169764
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0.11 0.02 val -6.456143981260552 (3.682e-12) 0.3917351522204385 (1.189e-04) 0.10003739813306789
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0 0 lower -7.286725093261439 (1.582e-32) 0.5617366995840669 (1.172e-18) 0.42267269858901113
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0 0.02 lower -7.324711282767474 (7.681e-33) 0.5623732128850824 (9.225e-19) 0.4245991682197199
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0.11 0.02 lower -6.508483971764743 (7.099e-19) 0.4223657577163359 (7.927e-08) 0.1854649585759981
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0 0 upper -8.145914721035593 (9.894e-30) 0.6381647795832008 (9.559e-18) 0.4077165459441988
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0 0.02 upper -8.158945183040357 (4.747e-30) 0.636240367986409 (7.567e-18) 0.40965687585908594
+ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared
+0 0.11 0.02 upper -7.535191929553077 (7.320e-14) 0.4986623771790489 (4.550e-06) 0.14367630571546564

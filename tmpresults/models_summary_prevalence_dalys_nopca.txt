@@ -1,0 +1,1835 @@
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 val
+0 Diabetes mellitus
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.296929
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.296929
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.296929
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.296929
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 lower
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.37819
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.251
+Model:                            OLS   Adj. R-squared:                  0.101
+Method:                 Least Squares   F-statistic:                     1.677
+Date:                Mon, 12 Jan 2026   Prob (F-statistic):              0.252
+Time:                        00:21:49   Log-Likelihood:                -9.8439
+No. Observations:                   7   AIC:                             23.69
+Df Residuals:                       5   BIC:                             23.58
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -14.0912      7.332     -1.922      0.113     -32.938       4.756
+comp_0         1.0355      0.800      1.295      0.252      -1.020       3.091
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                   2.935
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                0.609
+Skew:                           0.524   Prob(JB):                        0.737
+Kurtosis:                       2.005   Cond. No.                         154.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.296929
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 lower
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.37819
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.251
+Model:                            OLS   Adj. R-squared:                  0.101
+Method:                 Least Squares   F-statistic:                     1.677
+Date:                Mon, 12 Jan 2026   Prob (F-statistic):              0.252
+Time:                        00:53:39   Log-Likelihood:                -9.8439
+No. Observations:                   7   AIC:                             23.69
+Df Residuals:                       5   BIC:                             23.58
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -14.0912      7.332     -1.922      0.113     -32.938       4.756
+comp_0         1.0355      0.800      1.295      0.252      -1.020       3.091
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                   2.935
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                0.609
+Skew:                           0.524   Prob(JB):                        0.737
+Kurtosis:                       2.005   Cond. No.                         154.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.05 0.02 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.422312
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.288985
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.021
+Model:                            OLS   Adj. R-squared:                  0.016
+Method:                 Least Squares   F-statistic:                     4.244
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):             0.0407
+Time:                        17:46:25   Log-Likelihood:                -29.847
+No. Observations:                 204   AIC:                             63.69
+Df Residuals:                     202   BIC:                             70.33
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.5091      0.262      1.947      0.053      -0.007       1.025
+comp_0        -0.0621      0.030     -2.060      0.041      -0.121      -0.003
+==============================================================================
+Omnibus:                      368.732   Durbin-Watson:                   1.516
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            76618.643
+Skew:                          -9.641   Prob(JB):                         0.00
+Kurtosis:                      95.963   Cond. No.                         117.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.03 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.3088
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.23 0.02 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.438
+Model:                            OLS   Adj. R-squared:                  0.415
+Method:                 Least Squares   F-statistic:                     19.48
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           0.000170
+Time:                        17:46:25   Log-Likelihood:                -32.023
+No. Observations:                  27   AIC:                             68.05
+Df Residuals:                      25   BIC:                             70.64
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -18.9752      3.371     -5.628      0.000     -25.919     -12.032
+comp_0         1.6535      0.375      4.413      0.000       0.882       2.425
+==============================================================================
+Omnibus:                        0.113   Durbin-Watson:                   1.951
+Prob(Omnibus):                  0.945   Jarque-Bera (JB):                0.066
+Skew:                          -0.078   Prob(JB):                        0.967
+Kurtosis:                       2.813   Cond. No.                         194.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0 lower
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.369295
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.021
+Model:                            OLS   Adj. R-squared:                  0.016
+Method:                 Least Squares   F-statistic:                     4.387
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):             0.0375
+Time:                        17:46:25   Log-Likelihood:                -78.573
+No. Observations:                 204   AIC:                             161.1
+Df Residuals:                     202   BIC:                             167.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.6474      0.327      1.979      0.049       0.002       1.292
+comp_0        -0.0798      0.038     -2.095      0.037      -0.155      -0.005
+==============================================================================
+Omnibus:                      368.564   Durbin-Watson:                   1.511
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            76474.541
+Skew:                          -9.633   Prob(JB):                         0.00
+Kurtosis:                      95.875   Cond. No.                         114.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.03 lower
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.399526
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.23 0.02 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.103
+Model:                            OLS   Adj. R-squared:                  0.054
+Method:                 Least Squares   F-statistic:                     2.078
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):              0.167
+Time:                        17:46:25   Log-Likelihood:                -31.210
+No. Observations:                  20   AIC:                             66.42
+Df Residuals:                      18   BIC:                             68.41
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -13.7480      6.198     -2.218      0.040     -26.770      -0.725
+comp_0         0.9891      0.686      1.441      0.167      -0.453       2.431
+==============================================================================
+Omnibus:                        0.380   Durbin-Watson:                   2.356
+Prob(Omnibus):                  0.827   Jarque-Bera (JB):                0.375
+Skew:                          -0.274   Prob(JB):                        0.829
+Kurtosis:                       2.612   Cond. No.                         209.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0 0 upper
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.378043
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0 0.02 upper
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.404813
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.05 0.02 upper
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.299843
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.086
+Model:                            OLS   Adj. R-squared:                 -0.142
+Method:                 Least Squares   F-statistic:                    0.3766
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):              0.573
+Time:                        17:46:25   Log-Likelihood:                -7.5611
+No. Observations:                   6   AIC:                             19.12
+Df Residuals:                       4   BIC:                             18.71
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -8.8919      7.648     -1.163      0.310     -30.125      12.341
+comp_0         0.5059      0.824      0.614      0.573      -1.783       2.795
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                   2.281
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                1.504
+Skew:                           1.220   Prob(JB):                        0.471
+Kurtosis:                       3.242   Cond. No.                         168.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.881
+Model:                            OLS   Adj. R-squared:                  0.880
+Method:                 Least Squares   F-statistic:                     1532.
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           1.30e-97
+Time:                        17:46:25   Log-Likelihood:                -3.4688
+No. Observations:                 209   AIC:                             10.94
+Df Residuals:                     207   BIC:                             17.62
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -14.0085      0.230    -60.809      0.000     -14.463     -13.554
+comp_0         1.0263      0.026     39.134      0.000       0.975       1.078
+==============================================================================
+Omnibus:                      165.084   Durbin-Watson:                   2.118
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             7832.775
+Skew:                           2.421   Prob(JB):                         0.00
+Kurtosis:                      32.598   Cond. No.                         120.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.03 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.032
+Model:                            OLS   Adj. R-squared:                 -0.210
+Method:                 Least Squares   F-statistic:                    0.1320
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):              0.735
+Time:                        17:46:25   Log-Likelihood:                -8.4413
+No. Observations:                   6   AIC:                             20.88
+Df Residuals:                       4   BIC:                             20.47
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.8047      8.856     -0.881      0.428     -32.393      16.784
+comp_0         0.3468      0.955      0.363      0.735      -2.303       2.997
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                   2.237
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                1.652
+Skew:                           1.278   Prob(JB):                        0.438
+Kurtosis:                       3.284   Cond. No.                         168.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.23 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.262
+Model:                            OLS   Adj. R-squared:                  0.247
+Method:                 Least Squares   F-statistic:                     17.43
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           0.000122
+Time:                        17:46:25   Log-Likelihood:                -77.300
+No. Observations:                  51   AIC:                             158.6
+Df Residuals:                      49   BIC:                             162.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -14.3471      2.426     -5.914      0.000     -19.223      -9.472
+comp_0         1.1333      0.271      4.175      0.000       0.588       1.679
+==============================================================================
+Omnibus:                       14.956   Durbin-Watson:                   2.164
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               16.881
+Skew:                          -1.176   Prob(JB):                     0.000216
+Kurtosis:                       4.552   Cond. No.                         139.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0.11 0.02 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.303197
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0.11 0.02 lower
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.391762
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0 0 upper
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.38172
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0 0.02 upper
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.409183
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0.11 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.018
+Model:                            OLS   Adj. R-squared:                 -0.228
+Method:                 Least Squares   F-statistic:                   0.07155
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):              0.802
+Time:                        17:46:25   Log-Likelihood:                -8.7129
+No. Observations:                   6   AIC:                             21.43
+Df Residuals:                       4   BIC:                             21.01
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.0530      9.266     -0.761      0.489     -32.780      18.674
+comp_0         0.2672      0.999      0.267      0.802      -2.506       3.040
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                   2.204
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                1.356
+Skew:                           1.159   Prob(JB):                        0.508
+Kurtosis:                       3.236   Cond. No.                         168.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.05 0.02 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.422312
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.288985
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.021
+Model:                            OLS   Adj. R-squared:                  0.016
+Method:                 Least Squares   F-statistic:                     4.244
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):             0.0407
+Time:                        17:56:58   Log-Likelihood:                -29.847
+No. Observations:                 204   AIC:                             63.69
+Df Residuals:                     202   BIC:                             70.33
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.5091      0.262      1.947      0.053      -0.007       1.025
+comp_0        -0.0621      0.030     -2.060      0.041      -0.121      -0.003
+==============================================================================
+Omnibus:                      368.732   Durbin-Watson:                   1.516
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            76618.643
+Skew:                          -9.641   Prob(JB):                         0.00
+Kurtosis:                      95.963   Cond. No.                         117.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.03 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.3088
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.23 0.02 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.438
+Model:                            OLS   Adj. R-squared:                  0.415
+Method:                 Least Squares   F-statistic:                     19.48
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           0.000170
+Time:                        17:56:58   Log-Likelihood:                -32.023
+No. Observations:                  27   AIC:                             68.05
+Df Residuals:                      25   BIC:                             70.64
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -18.9752      3.371     -5.628      0.000     -25.919     -12.032
+comp_0         1.6535      0.375      4.413      0.000       0.882       2.425
+==============================================================================
+Omnibus:                        0.113   Durbin-Watson:                   1.951
+Prob(Omnibus):                  0.945   Jarque-Bera (JB):                0.066
+Skew:                          -0.078   Prob(JB):                        0.967
+Kurtosis:                       2.813   Cond. No.                         194.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0 lower
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.369295
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.021
+Model:                            OLS   Adj. R-squared:                  0.016
+Method:                 Least Squares   F-statistic:                     4.387
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):             0.0375
+Time:                        17:56:58   Log-Likelihood:                -78.573
+No. Observations:                 204   AIC:                             161.1
+Df Residuals:                     202   BIC:                             167.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.6474      0.327      1.979      0.049       0.002       1.292
+comp_0        -0.0798      0.038     -2.095      0.037      -0.155      -0.005
+==============================================================================
+Omnibus:                      368.564   Durbin-Watson:                   1.511
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            76474.541
+Skew:                          -9.633   Prob(JB):                         0.00
+Kurtosis:                      95.875   Cond. No.                         114.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.03 lower
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.399526
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.23 0.02 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.103
+Model:                            OLS   Adj. R-squared:                  0.054
+Method:                 Least Squares   F-statistic:                     2.078
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):              0.167
+Time:                        17:56:58   Log-Likelihood:                -31.210
+No. Observations:                  20   AIC:                             66.42
+Df Residuals:                      18   BIC:                             68.41
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -13.7480      6.198     -2.218      0.040     -26.770      -0.725
+comp_0         0.9891      0.686      1.441      0.167      -0.453       2.431
+==============================================================================
+Omnibus:                        0.380   Durbin-Watson:                   2.356
+Prob(Omnibus):                  0.827   Jarque-Bera (JB):                0.375
+Skew:                          -0.274   Prob(JB):                        0.829
+Kurtosis:                       2.612   Cond. No.                         209.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0 0 upper
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.378043
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0 0.02 upper
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.404813
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.05 0.02 upper
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.299843
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.086
+Model:                            OLS   Adj. R-squared:                 -0.142
+Method:                 Least Squares   F-statistic:                    0.3766
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):              0.573
+Time:                        17:56:58   Log-Likelihood:                -7.5611
+No. Observations:                   6   AIC:                             19.12
+Df Residuals:                       4   BIC:                             18.71
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -8.8919      7.648     -1.163      0.310     -30.125      12.341
+comp_0         0.5059      0.824      0.614      0.573      -1.783       2.795
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                   2.281
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                1.504
+Skew:                           1.220   Prob(JB):                        0.471
+Kurtosis:                       3.242   Cond. No.                         168.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.881
+Model:                            OLS   Adj. R-squared:                  0.880
+Method:                 Least Squares   F-statistic:                     1532.
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           1.30e-97
+Time:                        17:56:58   Log-Likelihood:                -3.4688
+No. Observations:                 209   AIC:                             10.94
+Df Residuals:                     207   BIC:                             17.62
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -14.0085      0.230    -60.809      0.000     -14.463     -13.554
+comp_0         1.0263      0.026     39.134      0.000       0.975       1.078
+==============================================================================
+Omnibus:                      165.084   Durbin-Watson:                   2.118
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             7832.775
+Skew:                           2.421   Prob(JB):                         0.00
+Kurtosis:                      32.598   Cond. No.                         120.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.03 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.032
+Model:                            OLS   Adj. R-squared:                 -0.210
+Method:                 Least Squares   F-statistic:                    0.1320
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):              0.735
+Time:                        17:56:58   Log-Likelihood:                -8.4413
+No. Observations:                   6   AIC:                             20.88
+Df Residuals:                       4   BIC:                             20.47
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.8047      8.856     -0.881      0.428     -32.393      16.784
+comp_0         0.3468      0.955      0.363      0.735      -2.303       2.997
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                   2.237
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                1.652
+Skew:                           1.278   Prob(JB):                        0.438
+Kurtosis:                       3.284   Cond. No.                         168.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.23 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.262
+Model:                            OLS   Adj. R-squared:                  0.247
+Method:                 Least Squares   F-statistic:                     17.43
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           0.000122
+Time:                        17:56:58   Log-Likelihood:                -77.300
+No. Observations:                  51   AIC:                             158.6
+Df Residuals:                      49   BIC:                             162.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        -14.3471      2.426     -5.914      0.000     -19.223      -9.472
+comp_0         1.1333      0.271      4.175      0.000       0.588       1.679
+==============================================================================
+Omnibus:                       14.956   Durbin-Watson:                   2.164
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               16.881
+Skew:                          -1.176   Prob(JB):                     0.000216
+Kurtosis:                       4.552   Cond. No.                         139.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0.11 0.02 val
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.303197
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0.11 0.02 lower
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.391762
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0 0 upper
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.38172
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0 0.02 upper
+0 Diabetes mellitus
+Warning: Could not generate summary - resids must contain at least 2 elements
+Model params: comp_0   -0.409183
+dtype: float64
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0.11 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.018
+Model:                            OLS   Adj. R-squared:                 -0.228
+Method:                 Least Squares   F-statistic:                   0.07155
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):              0.802
+Time:                        17:56:59   Log-Likelihood:                -8.7129
+No. Observations:                   6   AIC:                             21.43
+Df Residuals:                       4   BIC:                             21.01
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.0530      9.266     -0.761      0.489     -32.780      18.674
+comp_0         0.2672      0.999      0.267      0.802      -2.506       3.040
+==============================================================================
+Omnibus:                          nan   Durbin-Watson:                   2.204
+Prob(Omnibus):                    nan   Jarque-Bera (JB):                1.356
+Skew:                           1.159   Prob(JB):                        0.508
+Kurtosis:                       3.236   Cond. No.                         168.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0 0 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.353
+Model:                            OLS   Adj. R-squared:                  0.349
+Method:                 Least Squares   F-statistic:                     77.56
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           4.05e-15
+Time:                        18:03:48   Log-Likelihood:                -98.280
+No. Observations:                 144   AIC:                             200.6
+Df Residuals:                     142   BIC:                             206.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.3719      0.545    -13.525      0.000      -8.449      -6.294
+comp_0         0.5590      0.063      8.807      0.000       0.434       0.684
+==============================================================================
+Omnibus:                       44.044   Durbin-Watson:                   2.306
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              156.135
+Skew:                          -1.084   Prob(JB):                     1.25e-34
+Kurtosis:                       7.618   Cond. No.                         118.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0 0.02 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.366
+Model:                            OLS   Adj. R-squared:                  0.361
+Method:                 Least Squares   F-statistic:                     81.89
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           9.97e-16
+Time:                        18:03:48   Log-Likelihood:                -95.371
+No. Observations:                 144   AIC:                             194.7
+Df Residuals:                     142   BIC:                             200.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.4348      0.534    -13.918      0.000      -8.491      -6.379
+comp_0         0.5628      0.062      9.049      0.000       0.440       0.686
+==============================================================================
+Omnibus:                       33.900   Durbin-Watson:                   2.319
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               92.282
+Skew:                          -0.901   Prob(JB):                     9.14e-21
+Kurtosis:                       6.483   Cond. No.                         118.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.05 0.02 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.310
+Model:                            OLS   Adj. R-squared:                  0.305
+Method:                 Least Squares   F-statistic:                     63.38
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           5.10e-13
+Time:                        18:03:48   Log-Likelihood:                -104.93
+No. Observations:                 143   AIC:                             213.9
+Df Residuals:                     141   BIC:                             219.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.3835      0.579    -12.759      0.000      -8.527      -6.239
+comp_0         0.5369      0.067      7.961      0.000       0.404       0.670
+==============================================================================
+Omnibus:                       12.099   Durbin-Watson:                   2.305
+Prob(Omnibus):                  0.002   Jarque-Bera (JB):               17.031
+Skew:                          -0.473   Prob(JB):                     0.000200
+Kurtosis:                       4.401   Cond. No.                         119.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.064
+Model:                            OLS   Adj. R-squared:                  0.058
+Method:                 Least Squares   F-statistic:                     9.691
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):            0.00224
+Time:                        18:03:48   Log-Likelihood:                -180.75
+No. Observations:                 143   AIC:                             365.5
+Df Residuals:                     141   BIC:                             371.4
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -6.1737      0.983     -6.278      0.000      -8.118      -4.230
+comp_0         0.3568      0.115      3.113      0.002       0.130       0.583
+==============================================================================
+Omnibus:                       88.767   Durbin-Watson:                   2.323
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              544.268
+Skew:                          -2.196   Prob(JB):                    6.51e-119
+Kurtosis:                      11.488   Cond. No.                         119.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.089
+Model:                            OLS   Adj. R-squared:                  0.082
+Method:                 Least Squares   F-statistic:                     13.77
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           0.000297
+Time:                        18:03:48   Log-Likelihood:                -164.34
+No. Observations:                 143   AIC:                             332.7
+Df Residuals:                     141   BIC:                             338.6
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -6.3637      0.877     -7.258      0.000      -8.097      -4.630
+comp_0         0.3791      0.102      3.710      0.000       0.177       0.581
+==============================================================================
+Omnibus:                       57.407   Durbin-Watson:                   2.320
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              181.818
+Skew:                          -1.535   Prob(JB):                     3.30e-40
+Kurtosis:                       7.592   Cond. No.                         119.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.03 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.098
+Model:                            OLS   Adj. R-squared:                  0.092
+Method:                 Least Squares   F-statistic:                     15.30
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           0.000142
+Time:                        18:03:48   Log-Likelihood:                -159.77
+No. Observations:                 143   AIC:                             323.5
+Df Residuals:                     141   BIC:                             329.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -6.4368      0.849     -7.580      0.000      -8.116      -4.758
+comp_0         0.3871      0.099      3.912      0.000       0.191       0.583
+==============================================================================
+Omnibus:                       51.572   Durbin-Watson:                   2.317
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              146.959
+Skew:                          -1.409   Prob(JB):                     1.23e-32
+Kurtosis:                       7.090   Cond. No.                         119.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.23 0.02 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.004
+Model:                            OLS   Adj. R-squared:                 -0.004
+Method:                 Least Squares   F-statistic:                    0.4809
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):              0.489
+Time:                        18:03:48   Log-Likelihood:                -194.98
+No. Observations:                 117   AIC:                             394.0
+Df Residuals:                     115   BIC:                             399.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -4.9679      1.602     -3.102      0.002      -8.141      -1.795
+comp_0         0.1308      0.189      0.693      0.489      -0.243       0.504
+==============================================================================
+Omnibus:                       51.534   Durbin-Watson:                   2.047
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              150.062
+Skew:                          -1.647   Prob(JB):                     2.60e-33
+Kurtosis:                       7.464   Cond. No.                         115.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0 0 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.416
+Model:                            OLS   Adj. R-squared:                  0.412
+Method:                 Least Squares   F-statistic:                     101.0
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           2.76e-18
+Time:                        18:03:48   Log-Likelihood:                -79.453
+No. Observations:                 144   AIC:                             162.9
+Df Residuals:                     142   BIC:                             168.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.2630      0.472    -15.402      0.000      -8.195      -6.331
+comp_0         0.5582      0.056     10.052      0.000       0.448       0.668
+==============================================================================
+Omnibus:                        8.781   Durbin-Watson:                   2.305
+Prob(Omnibus):                  0.012   Jarque-Bera (JB):               13.533
+Skew:                          -0.286   Prob(JB):                      0.00115
+Kurtosis:                       4.389   Cond. No.                         115.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0 0.02 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.418
+Model:                            OLS   Adj. R-squared:                  0.414
+Method:                 Least Squares   F-statistic:                     102.0
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           2.06e-18
+Time:                        18:03:48   Log-Likelihood:                -78.990
+No. Observations:                 144   AIC:                             162.0
+Df Residuals:                     142   BIC:                             167.9
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.3030      0.470    -15.537      0.000      -8.232      -6.374
+comp_0         0.5591      0.055     10.101      0.000       0.450       0.669
+==============================================================================
+Omnibus:                        8.722   Durbin-Watson:                   2.314
+Prob(Omnibus):                  0.013   Jarque-Bera (JB):               13.398
+Skew:                          -0.285   Prob(JB):                      0.00123
+Kurtosis:                       4.382   Cond. No.                         115.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.05 0.02 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.272
+Model:                            OLS   Adj. R-squared:                  0.267
+Method:                 Least Squares   F-statistic:                     53.17
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           1.96e-11
+Time:                        18:03:48   Log-Likelihood:                -103.91
+No. Observations:                 144   AIC:                             211.8
+Df Residuals:                     142   BIC:                             217.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -6.7907      0.559    -12.151      0.000      -7.895      -5.686
+comp_0         0.4799      0.066      7.292      0.000       0.350       0.610
+==============================================================================
+Omnibus:                       34.971   Durbin-Watson:                   2.292
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              107.096
+Skew:                          -0.885   Prob(JB):                     5.55e-24
+Kurtosis:                       6.837   Cond. No.                         115.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.167
+Model:                            OLS   Adj. R-squared:                  0.161
+Method:                 Least Squares   F-statistic:                     28.21
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           4.14e-07
+Time:                        18:03:48   Log-Likelihood:                -124.41
+No. Observations:                 143   AIC:                             252.8
+Df Residuals:                     141   BIC:                             258.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -6.3869      0.654     -9.765      0.000      -7.680      -5.094
+comp_0         0.4095      0.077      5.311      0.000       0.257       0.562
+==============================================================================
+Omnibus:                       10.745   Durbin-Watson:                   2.286
+Prob(Omnibus):                  0.005   Jarque-Bera (JB):               12.506
+Skew:                          -0.507   Prob(JB):                      0.00193
+Kurtosis:                       4.034   Cond. No.                         116.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.176
+Model:                            OLS   Adj. R-squared:                  0.170
+Method:                 Least Squares   F-statistic:                     30.17
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           1.79e-07
+Time:                        18:03:48   Log-Likelihood:                -121.57
+No. Observations:                 143   AIC:                             247.1
+Df Residuals:                     141   BIC:                             253.1
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -6.4570      0.641    -10.071      0.000      -7.725      -5.189
+comp_0         0.4151      0.076      5.493      0.000       0.266       0.565
+==============================================================================
+Omnibus:                        9.568   Durbin-Watson:                   2.286
+Prob(Omnibus):                  0.008   Jarque-Bera (JB):               10.952
+Skew:                          -0.464   Prob(JB):                      0.00419
+Kurtosis:                       3.989   Cond. No.                         116.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.03 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.181
+Model:                            OLS   Adj. R-squared:                  0.175
+Method:                 Least Squares   F-statistic:                     31.22
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           1.15e-07
+Time:                        18:03:48   Log-Likelihood:                -120.26
+No. Observations:                 143   AIC:                             244.5
+Df Residuals:                     141   BIC:                             250.4
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -6.4968      0.635    -10.226      0.000      -7.753      -5.241
+comp_0         0.4184      0.075      5.587      0.000       0.270       0.566
+==============================================================================
+Omnibus:                        9.198   Durbin-Watson:                   2.286
+Prob(Omnibus):                  0.010   Jarque-Bera (JB):               10.521
+Skew:                          -0.447   Prob(JB):                      0.00519
+Kurtosis:                       3.983   Cond. No.                         116.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.23 0.02 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.076
+Model:                            OLS   Adj. R-squared:                  0.069
+Method:                 Least Squares   F-statistic:                     10.06
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):            0.00192
+Time:                        18:03:48   Log-Likelihood:                -145.36
+No. Observations:                 124   AIC:                             294.7
+Df Residuals:                     122   BIC:                             300.4
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -6.4714      0.958     -6.754      0.000      -8.368      -4.575
+comp_0         0.3617      0.114      3.171      0.002       0.136       0.587
+==============================================================================
+Omnibus:                       12.418   Durbin-Watson:                   2.011
+Prob(Omnibus):                  0.002   Jarque-Bera (JB):               14.837
+Skew:                          -0.606   Prob(JB):                     0.000600
+Kurtosis:                       4.184   Cond. No.                         115.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0 0 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.400
+Model:                            OLS   Adj. R-squared:                  0.396
+Method:                 Least Squares   F-statistic:                     93.99
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           2.41e-17
+Time:                        18:03:48   Log-Likelihood:                -99.942
+No. Observations:                 143   AIC:                             203.9
+Df Residuals:                     141   BIC:                             209.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -8.1219      0.568    -14.305      0.000      -9.244      -6.999
+comp_0         0.6346      0.065      9.695      0.000       0.505       0.764
+==============================================================================
+Omnibus:                       24.798   Durbin-Watson:                   2.319
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               48.911
+Skew:                          -0.765   Prob(JB):                     2.39e-11
+Kurtosis:                       5.422   Cond. No.                         122.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.402
+Model:                            OLS   Adj. R-squared:                  0.398
+Method:                 Least Squares   F-statistic:                     94.95
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           1.80e-17
+Time:                        18:03:48   Log-Likelihood:                -98.844
+No. Observations:                 143   AIC:                             201.7
+Df Residuals:                     141   BIC:                             207.6
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -8.1369      0.563    -14.442      0.000      -9.251      -7.023
+comp_0         0.6329      0.065      9.744      0.000       0.505       0.761
+==============================================================================
+Omnibus:                       24.312   Durbin-Watson:                   2.326
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               47.327
+Skew:                          -0.755   Prob(JB):                     5.29e-11
+Kurtosis:                       5.379   Cond. No.                         122.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.05 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.224
+Model:                            OLS   Adj. R-squared:                  0.219
+Method:                 Least Squares   F-statistic:                     40.73
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           2.36e-09
+Time:                        18:03:48   Log-Likelihood:                -142.91
+No. Observations:                 143   AIC:                             289.8
+Df Residuals:                     141   BIC:                             295.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.7897      0.767    -10.159      0.000      -9.306      -6.274
+comp_0         0.5641      0.088      6.382      0.000       0.389       0.739
+==============================================================================
+Omnibus:                       85.418   Durbin-Watson:                   2.319
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              636.979
+Skew:                          -1.992   Prob(JB):                    4.81e-139
+Kurtosis:                      12.542   Cond. No.                         122.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.122
+Model:                            OLS   Adj. R-squared:                  0.115
+Method:                 Least Squares   F-statistic:                     18.87
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           2.71e-05
+Time:                        18:03:48   Log-Likelihood:                -168.61
+No. Observations:                 138   AIC:                             341.2
+Df Residuals:                     136   BIC:                             347.1
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.4950      0.981     -7.639      0.000      -9.435      -5.555
+comp_0         0.4925      0.113      4.344      0.000       0.268       0.717
+==============================================================================
+Omnibus:                       49.539   Durbin-Watson:                   2.028
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              148.241
+Skew:                          -1.362   Prob(JB):                     6.46e-33
+Kurtosis:                       7.285   Cond. No.                         122.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.134
+Model:                            OLS   Adj. R-squared:                  0.128
+Method:                 Least Squares   F-statistic:                     21.12
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           9.73e-06
+Time:                        18:03:48   Log-Likelihood:                -161.16
+No. Observations:                 138   AIC:                             326.3
+Df Residuals:                     136   BIC:                             332.2
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.5077      0.930     -8.076      0.000      -9.346      -5.669
+comp_0         0.4937      0.107      4.596      0.000       0.281       0.706
+==============================================================================
+Omnibus:                       41.559   Durbin-Watson:                   2.037
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              105.093
+Skew:                          -1.195   Prob(JB):                     1.51e-23
+Kurtosis:                       6.545   Cond. No.                         122.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.11 0.03 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.141
+Model:                            OLS   Adj. R-squared:                  0.134
+Method:                 Least Squares   F-statistic:                     22.29
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           5.77e-06
+Time:                        18:03:48   Log-Likelihood:                -157.90
+No. Observations:                 138   AIC:                             319.8
+Df Residuals:                     136   BIC:                             325.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.5242      0.908     -8.288      0.000      -9.320      -5.729
+comp_0         0.4952      0.105      4.721      0.000       0.288       0.703
+==============================================================================
+Omnibus:                       38.729   Durbin-Watson:                   2.041
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               92.471
+Skew:                          -1.134   Prob(JB):                     8.32e-21
+Kurtosis:                       6.307   Cond. No.                         122.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+1 1 0.23 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.069
+Model:                            OLS   Adj. R-squared:                  0.059
+Method:                 Least Squares   F-statistic:                     6.739
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):             0.0110
+Time:                        18:03:48   Log-Likelihood:                -139.58
+No. Observations:                  93   AIC:                             283.2
+Df Residuals:                      91   BIC:                             288.2
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.9960      1.591     -5.026      0.000     -11.156      -4.836
+comp_0         0.4837      0.186      2.596      0.011       0.114       0.854
+==============================================================================
+Omnibus:                       10.718   Durbin-Watson:                   2.176
+Prob(Omnibus):                  0.005   Jarque-Bera (JB):               10.825
+Skew:                          -0.785   Prob(JB):                      0.00446
+Kurtosis:                       3.574   Cond. No.                         121.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0 0 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.362
+Model:                            OLS   Adj. R-squared:                  0.358
+Method:                 Least Squares   F-statistic:                     80.67
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           1.48e-15
+Time:                        18:03:48   Log-Likelihood:                -96.606
+No. Observations:                 144   AIC:                             197.2
+Df Residuals:                     142   BIC:                             203.2
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.4035      0.539    -13.742      0.000      -8.469      -6.338
+comp_0         0.5635      0.063      8.982      0.000       0.439       0.687
+==============================================================================
+Omnibus:                       41.649   Durbin-Watson:                   2.305
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              141.486
+Skew:                          -1.033   Prob(JB):                     1.89e-31
+Kurtosis:                       7.394   Cond. No.                         118.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0 0.02 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.374
+Model:                            OLS   Adj. R-squared:                  0.369
+Method:                 Least Squares   F-statistic:                     84.70
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           4.07e-16
+Time:                        18:03:48   Log-Likelihood:                -93.937
+No. Observations:                 144   AIC:                             191.9
+Df Residuals:                     142   BIC:                             197.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.4620      0.529    -14.109      0.000      -8.507      -6.417
+comp_0         0.5668      0.062      9.203      0.000       0.445       0.688
+==============================================================================
+Omnibus:                       32.357   Durbin-Watson:                   2.318
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               86.049
+Skew:                          -0.866   Prob(JB):                     2.06e-19
+Kurtosis:                       6.368   Cond. No.                         118.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0.11 0.02 val
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.100
+Model:                            OLS   Adj. R-squared:                  0.094
+Method:                 Least Squares   F-statistic:                     15.67
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           0.000119
+Time:                        18:03:48   Log-Likelihood:                -159.75
+No. Observations:                 143   AIC:                             323.5
+Df Residuals:                     141   BIC:                             329.4
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -6.4561      0.849     -7.604      0.000      -8.135      -4.778
+comp_0         0.3917      0.099      3.959      0.000       0.196       0.587
+==============================================================================
+Omnibus:                       51.819   Durbin-Watson:                   2.318
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              148.692
+Skew:                          -1.413   Prob(JB):                     5.15e-33
+Kurtosis:                       7.120   Cond. No.                         119.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0 0 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.423
+Model:                            OLS   Adj. R-squared:                  0.419
+Method:                 Least Squares   F-statistic:                     104.0
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           1.17e-18
+Time:                        18:03:48   Log-Likelihood:                -78.307
+No. Observations:                 144   AIC:                             160.6
+Df Residuals:                     142   BIC:                             166.6
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.2867      0.468    -15.576      0.000      -8.212      -6.362
+comp_0         0.5617      0.055     10.196      0.000       0.453       0.671
+==============================================================================
+Omnibus:                        8.476   Durbin-Watson:                   2.304
+Prob(Omnibus):                  0.014   Jarque-Bera (JB):               13.154
+Skew:                          -0.267   Prob(JB):                      0.00139
+Kurtosis:                       4.381   Cond. No.                         115.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0 0.02 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.425
+Model:                            OLS   Adj. R-squared:                  0.421
+Method:                 Least Squares   F-statistic:                     104.8
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           9.22e-19
+Time:                        18:03:48   Log-Likelihood:                -77.902
+No. Observations:                 144   AIC:                             159.8
+Df Residuals:                     142   BIC:                             165.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.3247      0.467    -15.701      0.000      -8.247      -6.403
+comp_0         0.5624      0.055     10.236      0.000       0.454       0.671
+==============================================================================
+Omnibus:                        8.435   Durbin-Watson:                   2.313
+Prob(Omnibus):                  0.015   Jarque-Bera (JB):               13.047
+Skew:                          -0.266   Prob(JB):                      0.00147
+Kurtosis:                       4.375   Cond. No.                         115.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0.11 0.02 lower
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.185
+Model:                            OLS   Adj. R-squared:                  0.180
+Method:                 Least Squares   F-statistic:                     32.10
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           7.93e-08
+Time:                        18:03:49   Log-Likelihood:                -119.60
+No. Observations:                 143   AIC:                             243.2
+Df Residuals:                     141   BIC:                             249.1
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -6.5085      0.632    -10.292      0.000      -7.759      -5.258
+comp_0         0.4224      0.075      5.666      0.000       0.275       0.570
+==============================================================================
+Omnibus:                        8.402   Durbin-Watson:                   2.284
+Prob(Omnibus):                  0.015   Jarque-Bera (JB):                9.340
+Skew:                          -0.424   Prob(JB):                      0.00937
+Kurtosis:                       3.920   Cond. No.                         116.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0 0 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.408
+Model:                            OLS   Adj. R-squared:                  0.404
+Method:                 Least Squares   F-statistic:                     97.06
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           9.56e-18
+Time:                        18:03:49   Log-Likelihood:                -98.448
+No. Observations:                 143   AIC:                             200.9
+Df Residuals:                     141   BIC:                             206.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -8.1459      0.562    -14.498      0.000      -9.257      -7.035
+comp_0         0.6382      0.065      9.852      0.000       0.510       0.766
+==============================================================================
+Omnibus:                       23.613   Durbin-Watson:                   2.318
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               45.958
+Skew:                          -0.733   Prob(JB):                     1.05e-10
+Kurtosis:                       5.358   Cond. No.                         122.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.410
+Model:                            OLS   Adj. R-squared:                  0.405
+Method:                 Least Squares   F-statistic:                     97.84
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           7.57e-18
+Time:                        18:03:49   Log-Likelihood:                -97.442
+No. Observations:                 143   AIC:                             198.9
+Df Residuals:                     141   BIC:                             204.8
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -8.1589      0.558    -14.624      0.000      -9.262      -7.056
+comp_0         0.6362      0.064      9.892      0.000       0.509       0.763
+==============================================================================
+Omnibus:                       23.233   Durbin-Watson:                   2.325
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               44.718
+Skew:                          -0.726   Prob(JB):                     1.95e-10
+Kurtosis:                       5.323   Cond. No.                         122.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+****************************
+****************************
+****************************
+ConsiderTC, ConsiderMB, informal, discount, scenario
+0 1 0.11 0.02 upper
+0 Diabetes mellitus
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    tax   R-squared:                       0.144
+Model:                            OLS   Adj. R-squared:                  0.137
+Method:                 Least Squares   F-statistic:                     22.82
+Date:                Fri, 16 Jan 2026   Prob (F-statistic):           4.55e-06
+Time:                        18:03:49   Log-Likelihood:                -157.23
+No. Observations:                 138   AIC:                             318.5
+Df Residuals:                     136   BIC:                             324.3
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -7.5352      0.903     -8.340      0.000      -9.322      -5.749
+comp_0         0.4987      0.104      4.777      0.000       0.292       0.705
+==============================================================================
+Omnibus:                       34.009   Durbin-Watson:                   2.030
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               71.040
+Skew:                          -1.050   Prob(JB):                     3.75e-16
+Kurtosis:                       5.819   Cond. No.                         122.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
