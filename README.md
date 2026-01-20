@@ -1,2 +1,2 @@
-# NCD-Economic-Burden
-NCD-Economic-Burden
+# ASCVD-Economic-Burden
+ASCVD-Economic-Burden
