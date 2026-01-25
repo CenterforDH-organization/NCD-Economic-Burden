@@ -12,6 +12,14 @@ import os
 import argparse
 import pdb
 
+# Correct age group ordering (numeric, not alphabetic)
+CORRECT_AGE_ORDER = ['d0', 'd5', 'd10', 'd15', 'd20', 'd25', 'd30', 'd35', 'd40', 'd45', 'd50', 'd55', 'd60', 'd65']
+CORRECT_INDEX = pd.MultiIndex.from_product([['F', 'M'], CORRECT_AGE_ORDER], names=['sex', 'age'])
+
+# Working age order (d15-d65 only, for labor and education data)
+WORKING_AGE_ORDER = ['d15', 'd20', 'd25', 'd30', 'd35', 'd40', 'd45', 'd50', 'd55', 'd60', 'd65']
+WORKING_AGE_INDEX = pd.MultiIndex.from_product([['F', 'M'], WORKING_AGE_ORDER], names=['sex', 'age'])
+
 # # Helper functions to retrieve data
 
 # In[5]:
@@ -34,6 +42,83 @@ def get_params(country, year=2019):
     df = pd.read_csv('data/savings.csv').set_index('Country Code')
     s = df.loc[country, '2050']/100
     return alpha, delta, InitialCapitalStock, s
+
+def aggregate_age_groups(df, method='sum'):
+    """
+    Aggregates age groups >= d65 (e.g., d70, d75) into d65.
+    If method is 'sum', values are summed (for Population).
+    If method is 'keep_first', only d65 is kept (for Rates).
+    Assume index includes 'age' level or column.
+    """
+    # Check if 'age' is in index
+    is_multi_index = False
+    if 'age' in df.index.names:
+        is_multi_index = True
+        df = df.reset_index()
+    
+    # Identify d65+ groups
+    # We look for d65, d70, d75, ...
+    # Simple logic: extract number from 'dXX', if >= 65, it's target
+    
+    # First, find valid age columns
+    # Actually, the dataframe structure at this point (before pivoting/setting index in some cases) 
+    # usually has 'age' column.
+    
+    if 'age' not in df.columns:
+        # If no age column, return as is (should not happen based on usage)
+        if is_multi_index:
+             df = df.set_index(['sex', 'age'])
+        return df
+
+    # Filter rows with age >= d65
+    # We assume format 'dXX'
+    def get_age_num(x):
+        try:
+            return int(x.replace('d', ''))
+        except:
+            return -1
+
+    df['age_num'] = df['age'].apply(get_age_num)
+    
+    # Split into under 65 and over 65
+    df_under = df[df['age_num'] < 65].copy()
+    df_over = df[df['age_num'] >= 65].copy()
+    
+    if df_over.empty:
+        df = df.drop(columns=['age_num'])
+        if is_multi_index:
+             df = df.set_index(['sex', 'age'])
+        return df
+
+    # Aggregate df_over
+    if method == 'sum':
+        # Sum by sex (and Country Code if present)
+        # We need to preserve non-numeric columns like Country Code, sex
+        # Numeric columns (years) should be summed
+        group_cols = ['sex']
+        if 'Country Code' in df.columns:
+            group_cols.append('Country Code')
+        
+        # d65 row for metadata
+        # We want the result to be labelled 'd65'
+        # We group by sex (and Country) and sum numeric columns
+        df_agg = df_over.groupby(group_cols).sum(numeric_only=True).reset_index()
+        df_agg['age'] = 'd65'
+        
+        # We might lose some metadata columns if they are not in group_cols
+        # But getPop structure is simple: Country Code, sex, age, years...
+        
+    else: # keep_first (essentially just keep d65 rows)
+        df_agg = df_over[df_over['age'] == 'd65'].copy()
+        
+    # Combine
+    df_final = pd.concat([df_under, df_agg], ignore_index=True)
+    df_final = df_final.drop(columns=['age_num'])
+    
+    if is_multi_index:
+         df_final = df_final.set_index(['sex', 'age'])
+         
+    return df_final
 
 
 # In[6]:
@@ -58,9 +143,13 @@ def getGDP(country, startyear, endyear):
 def getPop(country, startyear, endyear):
     df = pd.read_csv('data/population_un.csv')
     df = df[df['Country Code']==country]
+    # Drop exact duplicates first
+    df = df.drop_duplicates(subset=['sex', 'age'])
     df = df.set_index(['sex','age'])
     years = [str(i) for i in range(startyear, endyear, 1)]
     df = df[years]
+    # Reindex to ensure correct age ordering
+    df = df.reindex(CORRECT_INDEX)
     return df
 
 
@@ -71,9 +160,12 @@ def getPop(country, startyear, endyear):
 def getLaborRate(country, startyear, endyear):
     df = pd.read_csv('data/laborparticipation_final.csv')
     df = df[df['Country Code']==country]
+    df = df.drop_duplicates(subset=['sex', 'age'])
     df = df.set_index(['sex','age'])
     years = [str(i) for i in range(startyear, endyear, 1)]
     df = df[years]
+    # Reindex to ensure correct age ordering (working age only), fill with 0 for non-working ages
+    df = df.reindex(CORRECT_INDEX).fillna(0)
     return df
 
 
@@ -82,12 +174,15 @@ def getLaborRate(country, startyear, endyear):
 
 # get mortality
 def getMortalityDiseaseRate(disease, country, startyear, projectStartYear, endyear, scen='val'):
-    df = pd.read_csv('data_diabetes/mortality_%s.csv'%scen)
+    df = pd.read_csv('bigdata/data_diabetes/mortality_%s.csv'%scen)
     df = df[df['disease'] == disease]
     df = df[df['Country Code']==country]
     years = [str(i) for i in range(startyear, endyear, 1)]
+    df = df.drop_duplicates(subset=['sex', 'age'])
     df = df.set_index(['sex', 'age'])
     df = df[years]
+    # Reindex to ensure correct age ordering
+    df = df.reindex(CORRECT_INDEX)
     # before the project start time, assume the mortality is zero
     df[[str(i) for i in range(startyear, projectStartYear, 1)]] = 0
     return df
@@ -97,25 +192,31 @@ def getMortalityDiseaseRate(disease, country, startyear, projectStartYear, endye
 
 
 def getMorbidityDisease(disease, country, startyear, projectStartYear, endyear, scen='val'):
-    df = pd.read_csv('data_diabetes/morbidity_%s.csv'%scen)
+    df = pd.read_csv('bigdata/data_diabetes/morbidity_%s.csv'%scen)
     df = df[df['Country Code']==country]
     df = df[df['disease'] == disease]
+    df = df.drop_duplicates(subset=['sex', 'age'])
     df = df.set_index(['sex', 'age'])
     years = [str(i) for i in range(startyear, endyear, 1)]
     df = df[years]
     df = df.fillna(0)
+    # Reindex to ensure correct age ordering
+    df = df.reindex(CORRECT_INDEX).fillna(0)
     # before the project start time, assume the morbidity is zero
     df[[str(i) for i in range(startyear, projectStartYear, 1)]] = 0
     return df
 
 
 def get_prevalence(disease, country, startyear, projectStartYear, endyear, scen='val'):
-    df = pd.read_csv('data_diabetes/prevalence_%s.csv'%scen)
+    df = pd.read_csv('bigdata/data_diabetes/prevalence_%s.csv'%scen)
     df = df[df['disease'] == disease]
     df = df[df['Country Code']==country]
+    df = df.drop_duplicates(subset=['sex', 'age'])
     df = df.set_index(['sex', 'age'])
     years = [str(i) for i in range(startyear, endyear, 1)]
     df = df[years]
+    # Reindex to ensure correct age ordering
+    df = df.reindex(CORRECT_INDEX).fillna(0)
     # before the project start time, assume the mortality is zero
     df[[str(i) for i in range(startyear, projectStartYear, 1)]] = 0
     return df
@@ -125,14 +226,20 @@ def get_prevalence(disease, country, startyear, projectStartYear, endyear, scen=
 
 def getHumanCapital(country, startyear, endyear):
     years = [str(i) for i in range(startyear, endyear, 1)]
-    df1 = pd.read_csv('data/education_filled.csv').set_index(['sex','age'])
+    df1 = pd.read_csv('data/education_filled.csv')
     df1 = df1[df1['Country Code']==country]
+    df1 = df1.drop_duplicates(subset=['sex', 'age'])
+    df1 = df1.set_index(['sex','age'])
     df1 = df1[years]
+    # Reindex to ensure correct age ordering (working age only), fill with 0 for non-working ages
+    df1 = df1.reindex(CORRECT_INDEX).fillna(0)
 
     ys = df1 
 
     agedf = pd.read_csv('data/gd.csv')
     agedf = agedf.set_index(['sex','age'])
+    # Reindex gd.csv to correct age ordering
+    agedf = agedf.reindex(CORRECT_INDEX).fillna(0)
 
     ageaf = ys.copy()
     for key in df1.keys():
@@ -298,20 +405,19 @@ def project(disease, country, startyear, projectStartYear, endyear, ConsiderMB, 
         
     GDP_CF = np.multiply(GDP_CF, DiscountRate)
     GDP_SQ = np.multiply(GDP_SQ, DiscountRate)
-    # GDP_loss = GDP_SQ - GDP_CF (당뇨병 없는 경우 - 당뇨병 있는 경우 = 손실)
-    GDPloss = np.sum(np.subtract(GDP_SQ,GDP_CF))/1000000000
+    GDPloss = np.sum(np.subtract(GDP_CF,GDP_SQ))/1000000000
     
     # tax rate loss
-    tax = np.sum(np.subtract(GDP_SQ,GDP_CF))/sum(GDP_SQ[projectStartYear-startyear:])
+    tax = np.sum(np.subtract(GDP_CF,GDP_SQ))/sum(GDP_SQ[projectStartYear-startyear:])
     # per capita loss
     # pdb.set_trace()
-    pc_loss = np.sum(np.subtract(GDP_SQ,GDP_CF))/(population.sum(axis = 0)[projectStartYear-startyear:].mean())
+    pc_loss = np.sum(np.subtract(GDP_CF,GDP_SQ))/(population.sum(axis = 0)[projectStartYear-startyear:].mean())
     df = pd.DataFrame()
-    df['GDP_loss_percapita'] = np.subtract(GDP_SQ,GDP_CF)/ (population.sum(axis = 0))
+    df['GDP_loss_percapita'] = np.subtract(GDP_CF,GDP_SQ)/ (population.sum(axis = 0))
     df = df.reset_index()
     df = df.rename(columns={'index':'year'})
-    df['GDP_loss'] = np.subtract(GDP_SQ,GDP_CF)
-    df['GDP_loss_percentage'] = np.subtract(GDP_SQ,GDP_CF)/GDP_SQ
+    df['GDP_loss'] = np.subtract(GDP_CF,GDP_SQ)
+    df['GDP_loss_percentage'] = np.subtract(GDP_CF,GDP_SQ)/GDP_SQ
     df['EffectiveLabor_loss_percentage'] = np.subtract(FTE_CF,FTE_SQ)/FTE_SQ
     df = df.set_index('year')
     return df.iloc[projectStartYear-startyear:], GDPloss, tax, pc_loss
@@ -333,16 +439,15 @@ def get_he(country, year, projectStartYear):
 # In[17]:
 
 
-# get TC using Dieleman method: TC = Health Expenditure × Disease fraction
+# get TC
 def get_TC(country, disease):
-    # Use TC_fraction.csv and hepc_ppp.csv to calculate TC (Dieleman et al. 2020 style)
-    # This gives values consistent with the published paper
-    df_frac = pd.read_csv('data/TC_fraction.csv').set_index('Country Code')
-    df_he = pd.read_csv('data/hepc_ppp.csv').set_index('Country Code')
+    # Toggle between IDF (TC_ppp.csv) and Dieleman (TC_dieleman.csv)
+    # USE_DIELEMAN_DATA = True 
+    filename = 'data/TC_dieleman.csv' # Switch to Dieleman data
+    # filename = 'data/TC_ppp.csv' # Original IDF data
     
-    fraction = df_frac.loc[country, disease]
-    he_2021 = df_he.loc[country, '2021']  # TC is estimated based on 2021 health expenditure
-    TC = he_2021 * fraction
+    df_tc = pd.read_csv(filename).set_index('Country Code')
+    TC = df_tc.loc[country, disease]
     return TC
 
 
@@ -387,7 +492,7 @@ if __name__ == "__main__":
     diseases = np.array(["Diabetes mellitus"]) # "Other malignant neoplasms"
     diseases = sorted(diseases)
 
-    countries = pd.read_csv('data_diabetes/mortality_val.csv')['Country Code'].unique()
+    countries = pd.read_csv('bigdata/data_diabetes/mortality_val.csv')['Country Code'].unique()
     # diseases = pd.read_csv('bigdata/data_diabetes/mortality_val.csv')['disease'].unique()
     countries = sorted(countries)
     if args.ran: # Run on only five countries and two diseases for test
@@ -395,7 +500,7 @@ if __name__ == "__main__":
         diseases = np.random.choice(diseases, 2)
         # countries = np.random.choice(countries, 5)
         diseases = np.array(['Diabetes mellitus'])
-        countries = np.array(['LBR'])
+        countries = np.array(['USA'])
     diseases = sorted(diseases)
     pieces_df = []
     pieces_result = []
@@ -433,16 +538,26 @@ if __name__ == "__main__":
 
                 pieces_df.append(df)
                 pieces_result.append(result)
-            except:
-                print("failed %s: scenario:%s, TC:%s, MB%s"%(country, scenario, ConsiderTC, ConsiderMB))
+            except Exception as e:
+                import traceback
+                traceback.print_exc()
+                print('failed %s: scenario:%s, TC:%s, MB%s'%(country, scenario, ConsiderTC, ConsiderMB))
     save_annfilename = 'tmpresults/annual_results_TC%s_MB%s_informal%s_discount%s_%s.csv'%(ConsiderTC,ConsiderMB,informal,discount,scenario)
     save_aggfilename = 'tmpresults/aggregate_results_TC%s_MB%s_informal%s_discount%s_%s.csv'%(ConsiderTC,ConsiderMB,informal,discount,scenario)
     if args.ran:
         save_annfilename = 'tmpresults/runexampleann.csv'
         save_aggfilename = 'tmpresults/runexampleagg.csv'
 
-    df = pd.concat(pieces_df).reset_index()
-    df.to_csv(save_annfilename, index=False)
+    if len(pieces_df) > 0:
+        df = pd.concat(pieces_df).reset_index()
+        df.to_csv(save_annfilename, index=False)
+        print(f"Annual results saved to {save_annfilename}")
+    else:
+        print("Warning: No annual results to save")
 
-    df = pd.concat(pieces_result)
-    df.to_csv(save_aggfilename, index=False)
+    if len(pieces_result) > 0:
+        df = pd.concat(pieces_result)
+        df.to_csv(save_aggfilename, index=False)
+        print(f"Aggregate results saved to {save_aggfilename}")
+    else:
+        print("Warning: No aggregate results to save")

@@ -123,7 +123,7 @@ def get_df(df_result, ConsiderTC, ConsiderMB, informal, discount, scenario):
     return df
 
 def get_IHME_data(df_IHME, disease, scenario):
-    countries_info = pd.read_csv('data/dl1_countrycodeorg_country_name.csv', encoding='latin-1')
+    countries_info = pd.read_csv('data/dl1_countrycodeorg_country_name.csv', encoding='ISO-8859-1')
     df_IHME_disease = df_IHME[df_IHME['cause'] == disease]
     data = pd.pivot_table(df_IHME_disease, index='Country Code', columns='measure', values=scenario)
     if DoPCA:
@@ -136,15 +136,11 @@ def get_IHME_data(df_IHME, disease, scenario):
         # x = data[['YLLs (Years of Life Lost)', 'Prevalence']]
         x.columns = ['comp_0']
         x_input = x
-    # Fix: Use unique() to avoid duplicate country codes and match the length
-    all_countries = countries_info[countries_info['country'].notna()]['Country Code'].unique()
-    # Only set index if lengths match
-    if len(x_input) == len(all_countries):
-        x_input.index = all_countries
+    x_input.index = countries_info[countries_info['country'].notna()]['Country Code']
     return x_input
 
 def get_Indicator_data():
-    countries_info = pd.read_csv('data/dl1_countrycodeorg_country_name.csv', encoding='latin-1')
+    countries_info = pd.read_csv('data/dl1_countrycodeorg_country_name.csv', encoding='ISO-8859-1')
     Income = countries_info[['Country Code', 'Income group']]
     # print(Income['Income group'].unique())
     col1 = Income['Country Code']
@@ -225,15 +221,9 @@ def get_estimation_result(STATISTICS_DATA, est, ols_results):
     estdata = est.merge(STATISTICS_DATA, on='Country Code').set_index('Country Code')
     # save_folder = os.path.join(result_folder, disease)
     if DoPCA:
-        if len(ols_results.params) >= 4:
-            est['tax'] = ols_results.params[0]+ols_results.params[1]*est['comp_0']+ols_results.params[2]*est['comp_1'] +ols_results.params[3]*est['Upper income']
-        else:
-            est['tax'] = 0.0
+        est['tax'] = ols_results.params[0]+ols_results.params[1]*est['comp_0']+ols_results.params[2]*est['comp_1'] +ols_results.params[3]*est['Upper income'] ##+ols_results.params[3]*est['Incidence']+ols_results.params[3]*est['DALYs (Disability-Adjusted Life Years)']
     else:
-        if len(ols_results.params) >= 2:
-            est['tax'] = ols_results.params[0]+ols_results.params[1]*np.log(est['comp_0'])
-        else:
-            est['tax'] = 0.0
+        est['tax'] = ols_results.params[0]+ols_results.params[1]*np.log(est['comp_0'])
     est['tax'] = np.exp(est['tax'])
     est = est.set_index('Country Code')
     est['GDPloss'] = est['tax']*estdata['totalGDP']
@@ -278,11 +268,7 @@ def Process(df_result, df_IHME, diseases, STATISTICS_DATA, ConsiderTC, ConsiderM
                 print("ConsiderTC, ConsiderMB, informal, discount, scenario", file=f)
                 print(ConsiderTC, ConsiderMB, informal, discount, scenario, file=f)
                 print(i, disease, file=f)
-                try:
-                    print(ols_results.summary(), file=f)
-                except ValueError as e:
-                    print(f"Warning: Could not generate summary - {e}", file=f)
-                    print(f"Model params: {ols_results.params}", file=f)
+                print(ols_results.summary(), file=f)
                 est_prepare = get_estimation_prepare(df_agg, disease, IHMEdata)
                 est = get_estimation_result(STATISTICS_DATA, est_prepare, ols_results)
                 est['disease'] = disease
@@ -293,20 +279,13 @@ def Process(df_result, df_IHME, diseases, STATISTICS_DATA, ConsiderTC, ConsiderM
                 est['discount'] = discount     
                 pieces.append(est)  
                 print("ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared", file=f2)
-                if len(ols_results.params) >= 2:
-                    print(ConsiderTC, informal, discount, scenario, "%s (%.3e)"%(ols_results.params[0],ols_results.pvalues[0]), "%s (%.3e)"%(ols_results.params[1],ols_results.pvalues[1]), ols_results.rsquared, file=f2)
-                else:
-                    print(ConsiderTC, informal, discount, scenario, "Insufficient parameters", file=f2)
+                print(ConsiderTC, informal, discount, scenario, "%s (%.3e)"%(ols_results.params[0],ols_results.pvalues[0]), "%s (%.3e)"%(ols_results.params[1],ols_results.pvalues[1]), ols_results.rsquared, file=f2)
 
 
     df = pd.concat(pieces)
     l2 = len(df)
     print(l1, l2)
-    expected_total = 204 * 1
-    actual_total = l1 + l2
-    if actual_total != expected_total:
-        print(f"Warning: Expected {expected_total} countries, got {actual_total} (difference: {expected_total - actual_total})")
-    # assert(l1 + l2 == 204 * 1)  # Commented out to allow processing to continue
+    assert(l1 + l2 == 204 * 1)
     
     return df
         
@@ -327,12 +306,18 @@ if __name__ == "__main__":
     ## INPUT FILE
     df_result = pd.read_csv(args.input)
     diseases = sorted(df_result['disease'].unique())
-    countries_info = pd.read_csv('data/dl1_countrycodeorg_country_name.csv', encoding='latin-1')
+    countries_info = pd.read_csv('data/dl1_countrycodeorg_country_name.csv', encoding='ISO-8859-1')
     code_map = dict(zip(countries_info.country, countries_info['Country Code']))
-    df_IHME = pd.read_csv("data_diabetes/IHME.csv")
-    # Use .get() to handle missing country names gracefully
-    df_IHME['Country Code'] = df_IHME['location'].apply(lambda x: code_map.get(x, None))
-    # Remove rows where country code mapping failed
+    df_IHME = pd.read_csv("bigdata/data_diabetes/IHME.csv")
+    def get_code(x):
+        try:
+            return code_map[x]
+        except KeyError:
+            if "Cote d'Ivoire" in x or "Côte d'Ivoire" in x:
+                return 'CIV'
+            return None
+
+    df_IHME['Country Code'] = df_IHME['location'].apply(get_code)
     df_IHME = df_IHME.dropna(subset=['Country Code'])
     df_IHME = df_IHME[(df_IHME['year']==2019) & (df_IHME['metric']=='Rate')]
     print(df_result.columns)

@@ -1,10 +1,10 @@
-/Users/seungha/Desktop/KHU/Lab/22_economic/HMM_diabetes/HMM_main.py:241: RuntimeWarning: invalid value encountered in divide
+/home/caozhong/HMM_diabetes/HMM_main.py:239: RuntimeWarning: invalid value encountered in true_divide
   informal_care_labor_ratio = informal_care_labor/total_labor
-/Users/seungha/Desktop/KHU/Lab/22_economic/HMM_diabetes/HMM_main.py:254: RuntimeWarning: divide by zero encountered in divide
+/home/caozhong/HMM_diabetes/HMM_main.py:252: RuntimeWarning: divide by zero encountered in true_divide
   Scalings = np.divide(GDP_SQ, Y)
-/Users/seungha/Desktop/KHU/Lab/22_economic/HMM_diabetes/HMM_main.py:241: RuntimeWarning: invalid value encountered in divide
+/home/caozhong/HMM_diabetes/HMM_main.py:239: RuntimeWarning: invalid value encountered in true_divide
   informal_care_labor_ratio = informal_care_labor/total_labor
-/Users/seungha/Desktop/KHU/Lab/22_economic/HMM_diabetes/HMM_main.py:254: RuntimeWarning: divide by zero encountered in divide
+/home/caozhong/HMM_diabetes/HMM_main.py:252: RuntimeWarning: divide by zero encountered in true_divide
   Scalings = np.divide(GDP_SQ, Y)
 Countries 204 Diseases 1
 Diabetes mellitus ----------------------
@@ -66,12 +66,14 @@ CZE
 DEU
 DJI
 DMA
+failed DMA: scenario:lower, TC:1, MB1
 DNK
 DOM
 DZA
 failed DZA: scenario:lower, TC:1, MB1
 ECU
 EGY
+failed EGY: scenario:lower, TC:1, MB1
 ERI
 failed ERI: scenario:lower, TC:1, MB1
 ESP
@@ -156,6 +158,7 @@ MLT
 MMR
 failed MMR: scenario:lower, TC:1, MB1
 MNE
+failed MNE: scenario:lower, TC:1, MB1
 MNG
 MNP
 failed MNP: scenario:lower, TC:1, MB1

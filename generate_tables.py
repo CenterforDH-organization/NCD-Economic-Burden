@@ -21,7 +21,7 @@ class Tables():
         
 
     def set_params(self):
-        countries_info = pd.read_csv('data/dl1_countrycodeorg_country_name.csv', encoding='latin-1')
+        countries_info = pd.read_csv('data/dl1_countrycodeorg_country_name.csv', encoding='ISO-8859-1')
         self.countries_info = countries_info[['Country Code', 'Region', 'Income group', 'WBCountry', 'country']]
         # self.codemap = countries_info.dropna()
         self.endyear = 2051
@@ -96,67 +96,6 @@ class Tables():
         # df.reset_index().to_csv('tables/tmp_Table1_informal%s_discount%s.csv'%(self.state['informal'], self.state['discount']), index=False, float_format='%.3f')
         data.to_csv('tables/Table1_informal%s_discount%s.csv'%(self.state['informal'], self.state['discount']), index=False)
 
-    def generate_table1_detailed(self):
-        """Generate table in the same format as Table1_detailed_countries_d2i0.csv"""
-        identify =['Country Code', 'disease']
-        self.set_state(state={'ConsiderTC':1, 'ConsiderMB':1, 'scenario':'lower'})
-        self.get_data()
-        group1 = self.get_group_data(identify)[['Country Code', 'disease', 'GDPloss', 'tax', 'pc_loss']]
-
-        self.set_state(state={'ConsiderTC':1, 'ConsiderMB':1, 'scenario':'upper'})
-        self.get_data()
-        group2 = self.get_group_data(identify)[['Country Code', 'disease', 'GDPloss', 'tax', 'pc_loss']]
-
-        self.set_state(state={'ConsiderTC':1, 'ConsiderMB':1, 'scenario':'val'})
-        self.get_data()
-        group3 = self.get_group_data(identify)[['Country Code', 'disease', 'GDPloss', 'tax', 'pc_loss']]
-
-        lower = group1.groupby('Country Code').sum()
-        upper = group2.groupby('Country Code').sum()
-        base = group3.groupby('Country Code').sum()
-        
-        df = base.merge(upper,on='Country Code',suffixes=('', '_upper'))
-        df = df.merge(lower,on='Country Code',suffixes=('', '_lower'))
-        df = df.merge(self.countries_info, on='Country Code')
-        
-        data = df.copy()
-        
-        # Format with commas for thousands
-        def format_with_comma(val):
-            return "{:,}".format(int(round(val)))
-        
-        # Economic cost in millions (with commas)
-        data['Economic cost in millions of 2017 INT$'] = data.apply(
-            lambda row: format_with_comma(1000*row['GDPloss']) + '(' + 
-                       format_with_comma(1000*row['GDPloss_lower']) + '-' + 
-                       format_with_comma(1000*row['GDPloss_upper']) + ')', axis=1)
-        
-        # Percentage of total GDP
-        data['Percentage of total GDP in 2020-2050'] = data.apply(
-            lambda row: str(round(row['tax'],3)) + '(' + 
-                       str(round(row['tax_lower'],3)) + '-' + 
-                       str(round(row['tax_upper'],3)) + ')', axis=1)
-        
-        # Per capita loss (with commas)
-        data['Per capita loss in 2017 INT $'] = data.apply(
-            lambda row: '"' + format_with_comma(row['pc_loss']) + '(' + 
-                       format_with_comma(row['pc_loss_lower']) + '-' + 
-                       format_with_comma(row['pc_loss_upper']) + ')"', axis=1)
-        
-        # Sort and select columns (exclude 'country' column)
-        data = data.sort_values(['Region','WBCountry'])[
-            ['Region', 'WBCountry', 
-             'Economic cost in millions of 2017 INT$',
-             'Percentage of total GDP in 2020-2050',
-             'Per capita loss in 2017 INT $']]
-        
-        # Save with detailed naming convention
-        output_file = 'tables/Table1_detailed_countries_d{}_i{}.csv'.format(
-            int(self.state['discount']*100), 
-            int(self.state['informal']*100))
-        data.to_csv(output_file, index=False)
-        print(f"Generated: {output_file}")
-
     def generate_table2(self):
         identify =['Region', 'disease']
         group1 = self.get_group_data(identify)
@@ -217,8 +156,8 @@ class Tables():
         data3['averageGDP'] = data3['totalGDP'] / 1000000000 / (self.endyear - self.projectStartYear)
         data3['averagePOP'] = data3['totalPOP'] / 1000000 / (self.endyear - self.projectStartYear)        
 
-        yll = pd.read_csv('./data_diabetes/YLL_val.csv').set_index(['Country Code', 'sex', 'age']).drop(columns=['disease'])
-        yld = pd.read_csv('./data_diabetes/YLD_val.csv').set_index(['Country Code', 'sex', 'age']).drop(columns=['disease'])
+        yll = pd.read_csv('./bigdata/data_diabetes/YLL_val.csv').set_index(['Country Code', 'sex', 'age']).drop(columns=['disease'])
+        yld = pd.read_csv('./bigdata/data_diabetes/YLD_val.csv').set_index(['Country Code', 'sex', 'age']).drop(columns=['disease'])
         pop = pd.read_csv('./data/population_un.csv').set_index(['Country Code', 'sex', 'age'])
         DALYs = (yll + yld) * pop 
         DALY = pd.concat([DALYs['2020'].dropna(), DALYs['2050'].dropna()], axis=1)
@@ -244,7 +183,7 @@ class Tables():
         data6['daly2050'] = data6['2050'] / 1000000
         data6['daly2050_Ratio'] = data6['daly2050'] / data6['daly2050'].sum()
 
-        prev = pd.read_csv('./data_diabetes/prevalence_val.csv').set_index(['Country Code', 'sex', 'age']).drop(columns=['disease'])
+        prev = pd.read_csv('./bigdata/data_diabetes/prevalence_val.csv').set_index(['Country Code', 'sex', 'age']).drop(columns=['disease'])
         pop = pd.read_csv('./data/population_un.csv').set_index(['Country Code', 'sex', 'age'])
         PREVs = prev * pop 
         PREV = pd.concat([PREVs['2020'].dropna(), PREVs['2050'].dropna()], axis=1)
@@ -296,7 +235,6 @@ if __name__ == "__main__":
     # In[19]:
     mytable = Tables(discount=args.discount, informal=args.informal, filename=args.filename)
     mytable.generate_table1()
-    mytable.generate_table1_detailed()  # Generate detailed table in team format
     mytable.generate_table2()
     mytable.generate_table3()
 
