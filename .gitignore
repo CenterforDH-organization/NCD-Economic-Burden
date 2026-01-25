@@ -1,1 +1,14 @@
-.DS_Store
+## large data files
+bigdata/*
+
+## temp results
+*.tmp
+
+## system files or cache files
+.DS*
+.ipynb*
+*ingore*/
+
+
+
+
